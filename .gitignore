@@ -1,0 +1,33 @@
+# Ignore o ambiente virtual
+env/
+venv/
+ENV/
+.venv/
+
+# Ignore arquivos de banco de dados SQLite
+*.db
+
+# Ignore arquivos de log
+*.log
+
+# Ignore arquivos de configuração do editor/IDE
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore arquivos compilados do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore caches e histórico de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Ignore arquivos de backup do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignore arquivos de configuração do sistema operacional
+*.swp
+*~

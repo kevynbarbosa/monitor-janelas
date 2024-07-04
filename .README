@@ -1,0 +1,44 @@
+# Activity Monitor
+
+Este é um projeto de monitoramento de atividades que rastreia a janela ativa no sistema e identifica períodos de inatividade do usuário. O projeto armazena esses dados em um banco de dados SQLite e pode ser usado para gerar relatórios de uso de aplicativos e períodos de descanso.
+
+## Funcionalidades
+
+- Monitora a janela ativa no sistema.
+- Registra o nome do aplicativo e o título da janela.
+- Detecta e registra períodos de inatividade do mouse e teclado.
+- Armazena os dados em um banco de dados SQLite.
+
+## Requisitos
+
+- Python 3.x
+- `pip` (Python package installer)
+
+## Instalação
+
+1. Clone este repositório:
+
+   ```sh
+   git clone https://github.com/seu-usuario/activity-monitor.git
+   cd activity-monitor
+
+   ```
+
+2. Crie e ative um ambiente virtual:
+
+   ```sh
+   python -m venv env
+   source env/bin/activate  # No Windows: env\Scripts\activate
+
+   pip install -r requirements.txt
+   python monitor.py
+
+   ```
+
+3. Estrutura do Projeto
+   activity-monitor/
+   ├── env/ # Ambiente virtual Python (não incluído no repositório)
+   ├── monitor.py # Script de monitoramento de janelas ativas
+   ├── requirements.txt # Arquivo de dependências
+   ├── generate_report.py # Script para gerar relatórios (a ser implementado)
+   └── activity_monitor.db # Banco de dados SQLite (gerado pelo script)
